@@ -102,7 +102,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/notice" />
+                android:src="@drawable/write" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
@@ -110,7 +110,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/notice" />
+                android:src="@drawable/comment" />
         </LinearLayout>
     </LinearLayout>
 
