@@ -30,7 +30,7 @@
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:hint="글 제목을 입력하세요..." />
+            android:hint="글 제목을 입220하세요..." />
     </LinearLayout>
 
     <LinearLayout
