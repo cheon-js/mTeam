@@ -44,13 +44,12 @@
             android:layout_gravity="center"
             android:background="@drawable/border"
             android:text="" />
-        <!-- 주석
+
         <Button
             android:id="@+id/bt_id"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:insetRight="0"
             android:text="등록"
-            app:backgroundTint="@android:color/holo_blue_bright" />-->
+            app:backgroundTint="@android:color/holo_blue_bright" />
     </LinearLayout>
 </LinearLayout>
