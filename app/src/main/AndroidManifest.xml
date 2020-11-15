@@ -25,7 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".boardActivity" />
         <activity android:name=".CarpoolActivity" />
         <!--카카오 네이티브앱키 추가-->
         <meta-data

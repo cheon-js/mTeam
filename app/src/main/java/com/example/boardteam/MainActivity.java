@@ -33,17 +33,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mBottomNV = findViewById(R.id.nav_view);
-        mBottomNV.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        mBottomNV = findViewById(R.id.bottom_nav);
+        mBottomNV.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() { //NavigationItemSelecte
+            @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 BottomNavigate(menuItem.getItemId());
+
+
                 return true;
             }
         });
-        mBottomNV.setSelectedItemId(R.id.navigation_1);
+        mBottomNV.setSelectedItemId(R.id.menu_a);
     }
-
-    private void BottomNavigate(int id) { //바텀 액션네비 페이지 변경
+    private void BottomNavigate(int id) {  //BottomNavigation 페이지 변경
         String tag = String.valueOf(id);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -55,18 +57,24 @@ public class MainActivity extends AppCompatActivity {
 
         Fragment fragment = fragmentManager.findFragmentByTag(tag);
         if (fragment == null) {
-            if (id == R.id.navigation_1) {
-                fragment = new FragmentPage1();
-            }
-            else if (id == R.id.navigation_2){
+            if (id == R.id.menu_a) {
+                fragment = new FragmentPage1();//첫번째 눌렀을때 이벤트
+
+            } else if (id == R.id.menu_b){// 2 이벤트
+                fragment = new FragmentPage2();
+            } else if (id == R.id.menu_c){// 3 이벤트
+                fragment = new FragmentPage2();
+            } else if (id == R.id.menu_d){// 4 이벤트
                 fragment = new FragmentPage2();
             }
-            else
-                fragment = new FragmentPage3();
-            fragmentTransaction.add(R.id.content_layout, fragment, tag);
-        }
-        else
+            else {
+                fragment = new FragmentPage5();//5이벤트
+            }
+
+            fragmentTransaction.add(R.id.fragments_frame, fragment, tag);
+        } else {
             fragmentTransaction.show(fragment);
+        }
 
         fragmentTransaction.setPrimaryNavigationFragment(fragment);
         fragmentTransaction.setReorderingAllowed(true);
@@ -92,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             }*/
 
 
-    ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
+    /*ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
         imageButton.setOnClickListener(new View.OnClickListener()
 
     {
@@ -113,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    });
+    });*/
 
 
 

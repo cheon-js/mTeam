@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_a"
+        android:title="메인화면"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:id="@+id/menu_b"
+        android:title="두번째 넣을거"
+        android:icon="@drawable/list"
+        />
+    <item
+        android:id="@+id/menu_c"
+        android:title="세번째 넣을거"
+        android:icon="@drawable/pen"
+        />
+    <item
+        android:id="@+id/menu_d"
+        android:title="세번째 넣을거"
+        android:icon="@drawable/car"
+        />
+    <item
+        android:id="@+id/menu_e"
+        android:title="세번째 넣을거"
+        android:icon="@drawable/user"
+        />
+</menu>
