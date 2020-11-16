@@ -24,7 +24,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNV;//바텀액션
 
@@ -44,7 +43,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mBottomNV.setSelectedItemId(R.id.menu_a);
+        //---------------------------------바텀 네비게이션 -------------------------//
+        /*ImageButton imageButton5 = (ImageButton) findViewById(R.id.imageButton5);
+        imageButton5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v){
+                Intent intent = new Intent(getApplicationContext(), boardActivity.class);
+                startActivity(intent);
+            }
+        });*/
     }
+
     private void BottomNavigate(int id) {  //BottomNavigation 페이지 변경
         String tag = String.valueOf(id);
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -78,55 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentTransaction.setPrimaryNavigationFragment(fragment);
         fragmentTransaction.setReorderingAllowed(true);
-        fragmentTransaction.commitNow();
-
-
-   /*     getHashKey();
-    }
-        private void getHashKey() {
-            PackageInfo packageInfo = null;*/
-    //키해시값 얻는부분
-    /*        try {
-                PackageInfo info = getPackageManager().getPackageInfo("com.example.boardteam", PackageManager.GET_SIGNATURES);
-                for (Signature signature : info.signatures) {
-                    MessageDigest md = MessageDigest.getInstance("SHA");
-                    md.update(signature.toByteArray());
-                    Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-                }
-            } catch (PackageManager.NameNotFoundException e) {
-                e.printStackTrace();
-            } catch (NoSuchAlgorithmException e) {
-                e.printStackTrace();
-            }*/
-
-
-    /*ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
-        imageButton.setOnClickListener(new View.OnClickListener()
-
-    {
-        @Override
-        public void onClick (View v){
-        Intent intent = new Intent(getApplicationContext(), boardActivity.class);
-        startActivity(intent);
-    }
-    });
-
-    ImageButton imageButton5 = (ImageButton) findViewById(R.id.imageButton5);
-        imageButton5.setOnClickListener(new View.OnClickListener()
-
-    {
-        @Override
-        public void onClick (View v){
-        Intent intent = new Intent(getApplicationContext(), CarpoolActivity.class);
-        startActivity(intent);
-    }
-
-    });*/
-
-
-
-
-
-
-    }
+        fragmentTransaction.commitNow(); }
 }
+
+
