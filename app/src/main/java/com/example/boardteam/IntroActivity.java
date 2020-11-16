@@ -13,7 +13,7 @@ public class IntroActivity extends Activity {
         handler.postDelayed(new Runnable() {
 
             public void run() {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent); //다음화면으로 넘어감
                 finish();
             }
