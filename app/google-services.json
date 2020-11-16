@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917504010440",
+    "firebase_url": "https://mteam-428e6.firebaseio.com",
+    "project_id": "mteam-428e6",
+    "storage_bucket": "mteam-428e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917504010440:android:537db670bf7b57ff221dfd",
+        "android_client_info": {
+          "package_name": "com.example.boardteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917504010440-8uirqum1r1h5tsnbb7kqrr7epetch66d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO3NWQoqLwmlvyiidyWxzTnQn_A2wAj6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917504010440-8uirqum1r1h5tsnbb7kqrr7epetch66d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
